@@ -36,7 +36,8 @@ async function getWorkflows({ owner, repo, workflow_id, branch = 'main' }) {
       repo,
       // branch,
       // workflow_id,
-      event: 'release'
+      event: 'release',
+      status: 'success'
     })
   console.log({ total_count })
   return workflow_runs
